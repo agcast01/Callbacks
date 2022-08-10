@@ -20,11 +20,9 @@ myForEach(['laika', 'belka'], function (el) {
 });
 console.log(test); // ['LAIKA', 'BELKA']
 *******************************************************************************/
-
-let myForEach = function() {
-
+let myForEach = function(array, funct) {
+    for(let i in array) funct(array[i]);
 };
-
 
 
 

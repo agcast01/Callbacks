@@ -34,8 +34,10 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   optional initial accumulator
 *******************************************************************************/
 
-let mySimpleReduce = function() {
-
+let mySimpleReduce = function(array, reduce) {
+    let acc = array[0];
+    for(let i = 1; i < array.length; i++) acc =  reduce(acc, array[i]);
+    return acc;
 };
 
 
